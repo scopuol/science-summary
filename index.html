@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Science Summary Landing Page</title>
+<meta name="description" content="Science Summary Library: easy-to-read research summaries made accessible to everyone."/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">SS</span><span>Science Summary</span></a><div class="nav-links"><a class="active" href="index.html" id="navHome">Home</a><a href="database.html" id="navCollection">Summary collection</a><button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">DE</button></div></div></div>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-card">
+<h1 id="homeTitle">Science Summary Landing Page</h1>
+<div class="hero-copy">
+<p id="heroIntro"><strong>Welcome to the Science Summary Library!</strong> Discover scientific research made accessible to everyone. Here you’ll find clear, easy-to-read summaries of studies from different research groups. Explore topics that interest you, or click “Browse all summaries” to dive into the full collection.</p>
+</div>
+<div class="hero-actions">
+<a class="button primary" href="database.html" id="browseBtn">Browse all summaries</a>
+</div>
+</div>
+<section>
+  <div class="container">
+    <div class="panel simple-panel">
+      <div class="section-head compact-head">
+        <div>
+          <h2 id="previewTitle">A preview of available content</h2>
+          <p id="previewSubtitle">Vorschau verfügbarer Inhalte</p>
+        </div>
+      </div>
+      <div id="preview-cards" class="collection-grid" style="margin-top:1.5rem;"></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+<div class="container panel footer-card">
+<div>
+<div class="footer-title" id="footerTitle">How to reach us:</div>
+<div class="small">scop@uol.de</div>
+</div>
+</div>
+</footer>
+<script src="site.js"></script>
+<script>
+let allCards = [];
+
+function showRandomCards() {
+  const container = document.getElementById("preview-cards");
+
+  container.classList.add("preview-hidden");
+
+  setTimeout(() => {
+    container.innerHTML = "";
+
+    const shuffled = [...allCards].sort(() => Math.random() - 0.5);
+    const selected = shuffled.slice(0, 3);
+
+    selected.forEach(card => {
+      container.appendChild(card.cloneNode(true));
+    });
+
+    if (window.applyLanguage) {
+      window.applyLanguage(window.currentLang || localStorage.getItem('siteLanguage') || 'en');
+    }
+
+    container.classList.remove("preview-hidden");
+  }, 600);
+}
+
+fetch("database.html")
+  .then(res => res.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+
+    allCards = Array.from(doc.querySelectorAll(".summary-card"));
+
+    const container = document.getElementById("preview-cards");
+    container.classList.add("preview-fade");
+
+    showRandomCards();
+
+    setInterval(showRandomCards, 8000);
+  });
+</script>
+</body>
+</html>

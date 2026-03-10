@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Im Gleichgewicht: Wie das Gehirn Denken und Bewegung zugleich steuert - Keeping Balance: How the Brain Manages Thinking and Moving at the Same Time",
+    "description": "Die Gehirnaktivität während der Aufrechterhaltung des Gleichgewichts messen - Measure brain activity while maintaining balance",
+    "image": "summary-assets/im-gleichgewicht-wie-das-gehirn-denken-und-bewegung-zugleich-steuert/ChatGPT_Image_Dec_12_2025_10_47_10_PM.png",
+    "link": "summaries/im-gleichgewicht-wie-das-gehirn-denken-und-bewegung-zugleich-steuert.html",
+    "source": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2024.1382959/full",
+    "category": "Neuroscience",
+    "author": "Lara Papin",
+    "tags": ["Balance", "Brain", "EEG", "Movement"]
+  },
+  {
+    "title": "Pieptöne auf den Straßen - Beeps to Streets",
+    "description": "Research on how our brain processes everyday sound",
+    "image": "summary-assets/pieptoene-auf-den-strassen/NoisePollution062718.jpg",
+    "link": "summaries/pieptoene-auf-den-strassen.html",
+    "source": "https://www.researchgate.net/publication/391237415_From_beeps_to_streets_unveiling_sensory_input_and_relevance_across_auditory_contexts",
+    "category": "Neuroscience",
+    "author": "Silvia Korte",
+    "tags": ["Attention", "EEG", "Real-world sound"]
+  },
+  {
+    "title": "Stärkere Verbindungen im Tinnitus-Gehirn - Stronger brain connections within the tinnitus brain",
+    "description": "Research on brain connections within the tinnitus brain",
+    "image": "summary-assets/staerkere-verbindungen-im-tinnitus-gehirn/ChatGPT_Image_2._Mai_2025_15_32_31_cut.png",
+    "link": "summaries/staerkere-verbindungen-im-tinnitus-gehirn.html",
+    "source": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1293133/full",
+    "category": "Neuroscience",
+    "author": "Stephanie Rosemann",
+    "tags": ["Tinnitus", "MRI", "Fiber density"]
+  },
+  {
+    "title": "Wie wir Gehirnströme beim Gehen untersuchen: Eine Übersicht über die Bereinigung von EEG-Daten - How We Study Brainwaves While Walking: A Review of EEG Data Cleaning",
+    "description": "Messung der Gehirnaktivität beim Gehen - Measuring brain activity while walking",
+    "image": "summary-assets/wie-wir-gehirnstroeme-beim-gehen-untersuchen-eine-uebersicht-ueber-die/image.png",
+    "link": "summaries/wie-wir-gehirnstroeme-beim-gehen-untersuchen-eine-uebersicht-ueber-die.html",
+    "source": "https://doi.org/10.1101/2024.04.30.591874",
+    "category": "Neuroscience",
+    "author": "Nadine Jacobsen",
+    "tags": ["EEG", "Movement", "Walking"]
+  },
+  {
+    "title": "Mobiles EEG beim Schwimmen - Feasibility of Measuring Brain Activity with Mobile EEG During Swimming",
+    "description": "This study examines whether mobile EEG can reliably measure brain activity during swimming.",
+    "image": "summary-assets/mobiles-eeg-beim-schwimmen/Article 3. revised_translated.png",
+    "link": "summaries/mobiles-eeg-beim-schwimmen.html",
+    "source": "https://doi.org/10.3389/fnhum.2024.1466853",
+    "category": "Neuroscience",
+    "author": "Melanie Klapprott & Stefan Debener",
+    "tags": ["mobile EEG", "swimming", "N100", "P300", "dual-tasking"]
+  },
+  {
+    "title": "Sprache und ihre Rolle für die Replizierbarkeit - Let’s talk about language—and its role for replicability",
+    "description": "This study looks at the reproducibility crisis in science by highlighting a surprisingly overlooked factor, language.",
+    "image": "summary-assets/sprache-und-ihre-rolle-fuer-die-replizierbarkeit/Article 4. revised_translated.png",
+    "link": "summaries/sprache-und-ihre-rolle-fuer-die-replizierbarkeit.html",
+    "source": "https://www.nature.com/articles/s41599-025-04381-2",
+    "category": "Neuroscience",
+    "author": "Xenia Schmalz, Johannes Breuer, Mario Haim, Andrea Hildebrandt, Philipp Knöpfle, Anna Yi Leung, Timo Roettger",
+    "tags": ["language", "replicability", "transparency", "cross-linguistic", "research methods"]
+  }
+]
