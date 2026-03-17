@@ -195,3 +195,10 @@ section{padding:1.3rem 0 2rem}
 .lang-toggle{border:none;cursor:pointer;padding:.72rem 1rem;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;font-weight:800;font:inherit;box-shadow:var(--shadow-soft);min-height:52px}
 .lang-toggle:hover{transform:translateY(-1px)}
 .nav-links .lang-toggle{display:inline-flex;align-items:center;justify-content:center}
+
+.brand-logo {
+  width: 28px;   /* adjust until it matches your old "SS" size */
+  height: 28px;
+  object-fit: contain;
+  margin-right: 6px;
+}
